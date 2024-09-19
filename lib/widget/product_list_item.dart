@@ -1,3 +1,4 @@
+import 'package:api_product_app/screen/update_new_product.dart';
 import 'package:flutter/material.dart';
 
 class ProductList extends StatelessWidget {
@@ -21,7 +22,13 @@ class ProductList extends StatelessWidget {
           ButtonBar(
             children: [
               TextButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => UpdateNewProduct(),
+                      ));
+                },
                 icon: const Icon(Icons.edit),
                 label: const Text('Edit'),
               ),
