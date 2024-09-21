@@ -64,7 +64,6 @@ class _ProductListState extends State<ProductList> {
   }
 
 
-  // TODO : Error solving korte hobe
   void _onTapProductDelete() {
     setState(() {});
     productDelete();
