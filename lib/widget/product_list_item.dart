@@ -70,7 +70,7 @@ class _ProductListState extends State<ProductList> {
   }
 
   Future<void> productDelete() async {
-    var request = Request('GET', Uri.parse('http://164.68.107.70:6060/api/v1/DeleteProduct'));
+    var request = Request('GET', Uri.parse('http://164.68.107.70:6060/api/v1/DeleteProduct/${widget.product.id}'));
     StreamedResponse response = await request.send();
 
     if (response.statusCode == 200) {
